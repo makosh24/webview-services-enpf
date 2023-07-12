@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgCross(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.08096 1.08071C1.58864 0.573031 2.41175 0.573031 2.91943 1.08071L8.0002 6.16147L13.081 1.08071C13.5886 0.573031 14.4118 0.573031 14.9194 1.08071C15.4271 1.58839 15.4271 2.41151 14.9194 2.91919L9.83867 7.99995L14.9194 13.0807C15.4271 13.5884 15.4271 14.4115 14.9194 14.9192C14.4118 15.4269 13.5886 15.4269 13.081 14.9192L8.0002 9.83843L2.91943 14.9192C2.41175 15.4269 1.58864 15.4269 1.08096 14.9192C0.573275 14.4115 0.573275 13.5884 1.08096 13.0807L6.16172 7.99995L1.08096 2.91919C0.573275 2.41151 0.573275 1.58839 1.08096 1.08071Z",
+    fill: "#A9ACB0"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgCross);
+export default __webpack_public_path__ + "static/media/cross.0bd6ce0a8c602a68183da0d7b0bfb58d.svg";
+export { ForwardRef as ReactComponent };

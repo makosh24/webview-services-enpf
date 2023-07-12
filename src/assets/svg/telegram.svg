@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgTelegram(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 20,
+    height: 20,
+    viewBox: "0 0 20 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM14.8642 5.83868C15.0179 5.99242 15.0152 6.32557 14.9807 6.55592L13.8041 14.25C13.7466 14.6246 13.5729 15.0843 13.2726 15.2328C12.9414 15.3966 12.4379 15.2713 12.0914 15.0375L8.7854 12.8081C8.43307 12.5704 8.38913 12.0686 8.69479 11.7732L12.0819 8.50034C12.1747 8.41067 12.2256 8.23878 12.1485 8.14763C12.0719 8.05695 11.8834 8.068 11.7847 8.13536L7.60489 10.9869C6.94758 11.4353 6.12471 11.5677 5.35991 11.3482L3.86755 10.901C3.62219 10.8246 3.39951 10.6528 3.39215 10.4865C3.385 10.3247 3.54979 10.1488 3.82733 10.0161L13.8955 5.79677C14.2007 5.66721 14.6698 5.64202 14.8642 5.83868Z",
+    fill: "black"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgTelegram);
+export default __webpack_public_path__ + "static/media/telegram.49142b6d779619cf7f1baf0382e6b8a4.svg";
+export { ForwardRef as ReactComponent };

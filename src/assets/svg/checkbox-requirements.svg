@@ -1,0 +1,35 @@
+var _rect, _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgCheckboxRequirements(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 48,
+    height: 48,
+    viewBox: "0 0 48 48",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 48,
+    height: 48,
+    rx: 12,
+    fill: "#F4F5F6"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M32.9243 18.0758C33.1586 18.3101 33.1586 18.69 32.9243 18.9243L21.9243 29.9243C21.69 30.1586 21.3101 30.1586 21.0758 29.9243L15.0758 23.9243C14.8414 23.69 14.8414 23.3101 15.0758 23.0758C15.3101 22.8414 15.69 22.8414 15.9243 23.0758L21.5 28.6515L32.0758 18.0758C32.3101 17.8414 32.69 17.8414 32.9243 18.0758Z",
+    fill: "#131416"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgCheckboxRequirements);
+export default __webpack_public_path__ + "static/media/checkbox-requirements.781af1f03955232d5ea6c27d0b589654.svg";
+export { ForwardRef as ReactComponent };

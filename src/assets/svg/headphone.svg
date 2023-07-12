@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgHeadphone(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 42,
+    height: 46,
+    viewBox: "0 0 42 46",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M38.4498 18.8973C37.7701 10.2089 30.2171 3.36259 20.9998 3.36259C11.7825 3.36259 4.22954 10.2089 3.5498 18.8973H4.17683C6.10983 18.8973 7.67683 20.4028 7.67683 22.2599V31.5205H3.5C1.567 31.5205 0 30.015 0 28.1579V20.1752V19.5698C0 19.5241 0.00476155 19.4794 0.0138348 19.4361C0.418722 8.63604 9.65952 0 20.9998 0C32.3393 0 41.5796 8.63486 41.9857 19.4339C41.9951 19.4778 42 19.5233 42 19.5698V28.1579C42 30.015 40.433 31.5205 38.5 31.5205H34.3232V22.2599C34.3232 20.4028 35.8902 18.8973 37.8232 18.8973H38.4498ZM34.5931 37.499V35.2974H38.0931V37.499C38.0931 40.9037 35.2203 43.6638 31.6765 43.6638H25.0114C24.349 45.0429 22.897 46 21.2124 46C18.9029 46 17.0306 44.2013 17.0306 41.9825C17.0306 39.7636 18.9029 37.9649 21.2124 37.9649C22.897 37.9649 24.349 38.922 25.0114 40.3012H31.6765C33.2873 40.3012 34.5931 39.0466 34.5931 37.499Z",
+    fill: "#27AE60"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgHeadphone);
+export default __webpack_public_path__ + "static/media/headphone.e86f17f7afbcbe80caa3654d162973a1.svg";
+export { ForwardRef as ReactComponent };

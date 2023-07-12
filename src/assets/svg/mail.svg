@@ -1,0 +1,36 @@
+var _g, _defs;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgMail(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 42,
+    height: 34,
+    viewBox: "0 0 42 34",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_1_987)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M-0.538452 10.4855V26.9609C-0.538452 28.7221 0.199045 30.4112 1.5118 31.6566C2.82455 32.9019 4.60503 33.6016 6.46155 33.6016H34.4615C36.3181 33.6016 38.0985 32.9019 39.4113 31.6566C40.724 30.4112 41.4615 28.7221 41.4615 26.9609V7.03906C41.4615 5.27786 40.724 3.58879 39.4113 2.34343C38.0985 1.09807 36.3181 0.398438 34.4615 0.398438H6.46155C4.60503 0.398438 2.82455 1.09807 1.5118 2.34343C0.199045 3.58879 -0.538452 5.27786 -0.538452 7.03906V10.4855ZM6.46155 3.71875H34.4615C35.3898 3.71875 36.28 4.06857 36.9364 4.69125C37.5928 5.31393 37.9615 6.15846 37.9615 7.03906V9.49609L20.4615 18.4344L2.96155 9.49609V7.03906C2.96155 6.15846 3.3303 5.31393 3.98667 4.69125C4.64305 4.06857 5.53329 3.71875 6.46155 3.71875ZM2.96155 13.268L19.632 21.7812C19.887 21.9114 20.172 21.9796 20.4615 21.9796C20.7511 21.9796 21.0361 21.9114 21.291 21.7812L37.9615 13.268V26.9609C37.9615 27.8415 37.5928 28.6861 36.9364 29.3088C36.28 29.9314 35.3898 30.2812 34.4615 30.2812H6.46155C5.53329 30.2812 4.64305 29.9314 3.98667 29.3088C3.3303 28.6861 2.96155 27.8415 2.96155 26.9609V13.268Z",
+    fill: "#27AE60"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_1_987"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 42,
+    height: 34,
+    fill: "white"
+  })))));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgMail);
+export default __webpack_public_path__ + "static/media/mail.69866839fd18342f4b730e86527fe6b8.svg";
+export { ForwardRef as ReactComponent };

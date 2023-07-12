@@ -1,0 +1,40 @@
+var _rect, _path, _path2;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgBannerinfo2(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 48,
+    height: 48,
+    viewBox: "0 0 48 48",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 48,
+    height: 48,
+    rx: 12,
+    fill: "#F7F8F9"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M19.25 25.75C19.8023 25.75 20.25 25.3023 20.25 24.75C20.25 24.1977 19.8023 23.75 19.25 23.75C18.6977 23.75 18.25 24.1977 18.25 24.75C18.25 25.3023 18.6977 25.75 19.25 25.75ZM24.25 25.75C24.8023 25.75 25.25 25.3023 25.25 24.75C25.25 24.1977 24.8023 23.75 24.25 23.75C23.6977 23.75 23.25 24.1977 23.25 24.75C23.25 25.3023 23.6977 25.75 24.25 25.75ZM30.25 24.75C30.25 25.3023 29.8023 25.75 29.25 25.75C28.6977 25.75 28.25 25.3023 28.25 24.75C28.25 24.1977 28.6977 23.75 29.25 23.75C29.8023 23.75 30.25 24.1977 30.25 24.75Z",
+    fill: "#131416"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M19.25 15.15C19.5814 15.15 19.85 15.4187 19.85 15.75L19.85 17.2494V18.25C19.85 18.5814 19.5814 18.85 19.25 18.85C18.9186 18.85 18.65 18.5814 18.65 18.25V17.85L17 17.85C16.2268 17.85 15.6 18.4768 15.6 19.25L15.6 30.25C15.6 31.0232 16.2268 31.65 17 31.65L31 31.65C31.7732 31.65 32.4 31.0232 32.4 30.25L32.4 19.25C32.4 18.4768 31.7732 17.85 31 17.85L29.6 17.85V18.25C29.6 18.5814 29.3314 18.85 29 18.85C28.6686 18.85 28.4 18.5814 28.4 18.25V15.75C28.4 15.4187 28.6686 15.15 29 15.15C29.3314 15.15 29.6 15.4187 29.6 15.75V16.65L31 16.65C32.4359 16.65 33.6 17.8141 33.6 19.25L33.6 30.25C33.6 31.686 32.4359 32.85 31 32.85L17 32.85C15.5641 32.85 14.4 31.686 14.4 30.25L14.4 19.25C14.4 17.8141 15.5641 16.65 17 16.65L18.65 16.65V15.75C18.65 15.4187 18.9186 15.15 19.25 15.15ZM22.5 15.15C22.8314 15.15 23.1 15.4187 23.1 15.75L23.1 18.25C23.1 18.5814 22.8314 18.85 22.5 18.85C22.1686 18.85 21.9 18.5814 21.9 18.25L21.9 15.75C21.9 15.4187 22.1686 15.15 22.5 15.15ZM25.75 15.15C26.0814 15.15 26.35 15.4187 26.35 15.75V18.25C26.35 18.5814 26.0814 18.85 25.75 18.85C25.4186 18.85 25.15 18.5814 25.15 18.25V15.75C25.15 15.4187 25.4186 15.15 25.75 15.15Z",
+    fill: "#131416"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgBannerinfo2);
+export default __webpack_public_path__ + "static/media/bannerinfo2.2e0fa98afd8300a5ee75ed54a309665a.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,37 @@
+var _g, _defs;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgWhatsapp(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 21,
+    height: 22,
+    viewBox: "0 0 21 22",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_1_872)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M17.8513 3.55294C16.8886 2.58126 15.742 1.81092 14.4786 1.28678C13.2151 0.762651 11.86 0.495217 10.4921 0.500065C4.76044 0.500065 0.08925 5.16994 0.084 10.9029C0.084 12.7391 0.564375 14.5254 1.47131 16.107L0 21.5001L5.51775 20.0537C7.04419 20.8844 8.75428 21.3198 10.4921 21.3203H10.4974C16.2304 21.3203 20.9003 16.6504 20.9055 10.9121C20.9068 9.54456 20.6375 8.19025 20.1131 6.92722C19.5887 5.66419 18.8196 4.51741 17.85 3.55294H17.8513ZM10.4921 19.5589C8.94206 19.5594 7.42048 19.1423 6.08738 18.3514L5.77237 18.1624L2.499 19.0208L3.37312 15.8274L3.16838 15.498C2.30187 14.1203 1.8436 12.5252 1.84669 10.8977C1.84669 6.13856 5.72775 2.25619 10.4974 2.25619C11.6337 2.25415 12.7591 2.47705 13.8088 2.91203C14.8586 3.34702 15.8118 3.98549 16.6136 4.79063C17.4182 5.59263 18.0561 6.546 18.4904 7.59574C18.9247 8.64549 19.1469 9.77084 19.1441 10.9069C19.1389 15.6831 15.2578 19.5589 10.4921 19.5589ZM15.2368 13.083C14.9783 12.9531 13.7012 12.3244 13.461 12.2351C13.2221 12.1498 13.0476 12.1052 12.8769 12.3651C12.7024 12.6236 12.2036 13.2129 12.054 13.3823C11.9044 13.5568 11.7495 13.5765 11.4896 13.4479C11.2311 13.3166 10.3924 13.0436 9.40013 12.1551C8.62575 11.466 8.10731 10.6129 7.95244 10.3543C7.80281 10.0944 7.938 9.95531 8.06794 9.82538C8.18213 9.70988 8.3265 9.52088 8.45644 9.37125C8.58769 9.22163 8.631 9.11138 8.71631 8.93813C8.80162 8.76225 8.76094 8.61263 8.69662 8.48269C8.631 8.35275 8.11256 7.07044 7.89337 6.55331C7.68337 6.04275 7.46944 6.11363 7.30931 6.10706C7.15969 6.09788 6.98513 6.09788 6.81056 6.09788C6.67874 6.10115 6.54902 6.13164 6.42954 6.18743C6.31005 6.24322 6.20339 6.3231 6.11625 6.42206C5.87737 6.68194 5.20931 7.31063 5.20931 8.59294C5.20931 9.87525 6.14119 11.1077 6.27244 11.2823C6.40106 11.4568 8.10206 14.0805 10.7126 15.2093C11.3295 15.4783 11.8151 15.6371 12.1944 15.7579C12.8179 15.9574 13.3809 15.9272 13.8298 15.8629C14.3286 15.7868 15.3667 15.2329 15.5859 14.6252C15.8012 14.0162 15.8012 13.4964 15.7356 13.3875C15.6713 13.2773 15.4967 13.2129 15.2368 13.083Z",
+    fill: "#27AE60"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_1_872"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 21,
+    height: 21,
+    fill: "white",
+    transform: "translate(0 0.5)"
+  })))));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgWhatsapp);
+export default __webpack_public_path__ + "static/media/whatsapp.256f8654bed3e9beb1ecb3599023f4be.svg";
+export { ForwardRef as ReactComponent };

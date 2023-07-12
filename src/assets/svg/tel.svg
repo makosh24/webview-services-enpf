@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgTel(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 20,
+    height: 22,
+    viewBox: "0 0 20 22",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M4.29007 14.8546H4.44007V14.7046V10.6782C4.44007 9.78434 3.69769 9.06623 2.79007 9.06623H2.68524C3.04875 5.44628 6.18197 2.612 9.99992 2.612C13.8179 2.612 16.9511 5.44628 17.3146 9.06623H17.2099C16.3023 9.06623 15.5599 9.78434 15.5599 10.6782V14.7046V14.8546H15.7099H17.5C18.4076 14.8546 19.15 14.1365 19.15 13.2426V9.50863C19.15 9.48276 19.1477 9.4573 19.1433 9.43247C18.9602 4.65887 14.9333 0.85 9.99992 0.85C5.06615 0.85 1.03899 4.65951 0.856456 9.43368C0.852202 9.45813 0.85 9.48318 0.85 9.50863V9.77181V13.2426C0.85 14.1365 1.59238 14.8546 2.5 14.8546H4.29007ZM15.8256 16.1967H15.6756V16.3467V17.3039C15.6756 17.8903 15.1868 18.3722 14.5756 18.3722H11.8114C11.486 17.7674 10.8368 17.3565 10.091 17.3565C9.02203 17.3565 8.14885 18.2021 8.14885 19.2532C8.14885 20.3044 9.02204 21.15 10.091 21.15C10.8368 21.15 11.486 20.7391 11.8114 20.1342H14.5756C16.1736 20.1342 17.4756 18.8707 17.4756 17.3039V16.3467V16.1967H17.3256H15.8256Z",
+    fill: "#27AE60",
+    stroke: "#27AE60",
+    strokeWidth: 0.3
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgTel);
+export default __webpack_public_path__ + "static/media/tel.85a8d82f60a24745881c652c92b4d085.svg";
+export { ForwardRef as ReactComponent };
